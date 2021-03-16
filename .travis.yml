@@ -1,0 +1,36 @@
+language: node_js
+
+node_js:
+  - 10
+
+jobs:
+  include:
+    # the validation stage is to run our tests
+    - stage: validating
+      node_js: lts/*
+      name: "Linting"
+      script:
+        - npm run lint
+      name: "Unit Testing"
+      script:
+        - npm run test:cov
+      name: "End to End Testing"
+      script:
+        - npm run test:e2e
+      name: "Report coverage"
+      script:
+        - npm run coverage-report
+    - stage: build
+      script:
+        - npm run build
+    # Define the release stage that runs semantic-release
+    - stage: release
+      node_js: lts/*
+      # Advanced: optionally overwrite your default `script` step to skip the tests
+      # script: skip
+      deploy:
+        provider: script
+        skip_cleanup: true
+        script:
+          - npm install -g travis-deploy-once
+          - travis-deploy-once "npm run semantic-release"
