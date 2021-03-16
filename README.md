@@ -1,4 +1,4 @@
-<p align="center">
+<!-- <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo_text.svg" width="320" alt="Nest Logo" /></a>
 </p>
 
@@ -22,11 +22,45 @@
   <a href="https://twitter.com/nestframework"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
 </p>
   <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)--> -->
 
-## Description
+# Description
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+This is the a development exercise for a backend developer position using our [Nestjs starter kit](https://github.com/grainer/nest-template).
+
+# Your Task
+
+your task is to create a functioning cryptocurrency converter and price checking [**Graphql API**](https://docs.nestjs.com/graphql/quick-start) using the technology stack provided to you in this project.
+
+- For getting cryptocurrencies information and rates you can use coingecko free api (feel free to use any other api as long as it fulfills the purpose).
+
+- You can make assumptions as you progress.
+
+- please ensure that your solution could be considered "production ready" and complete.
+
+# How to submit
+
+- [ ] Create a private copy of this repo or use as template 
+![image](https://user-images.githubusercontent.com/14952013/111130392-24065600-85b2-11eb-8044-c95393ee263d.png)
+- [ ] Complete the task above in a feature branch
+- [ ] Create a pull request against your private repository master branch
+- [ ] In the PR, write how much time it took you to finish the exercise and the demo link
+- [ ] Invite a Github user `gimyboya` to your repository
+- [ ] Send us an email at `info@grainer.io` informing us that you completed the exercise
+
+# How you will be evaluated
+
+We will check
+
+- If the instructions were properly followed
+- How you tackle the problem
+- If the end result work properly
+- Code quality
+- Commits and Pull request commenting quality
+
+# Prerequisites
+
+You are expected to have be familiar with Typescript and Graphql as well as Nestjs *if not then give it a try :)*.
 
 ## Installation
 
@@ -59,17 +93,3 @@ $ npm run test:e2e
 # test coverage
 $ npm run test:cov
 ```
-
-## Support
-
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
-
-  Nest is [MIT licensed](LICENSE).
